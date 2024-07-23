@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .main {
+      height: 300px;
+      width: 100px;
+      overflow-y: scroll;
+      position: relative;
+    }
+
+    .child {
+      height: 100px;
+      width: 100px;
+      position: sticky;
+      top: 0;
+    }
+
+    .one {
+      background-color: blue;
+      z-index: 1;
+    }
+
+    .two {
+      background-color: green;
+      z-index: 2;
+    }
+
+    .three {
+      background-color: red;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="child one"></div>
+    <div class="child two"></div>
+    <div class="child three"></div>
+  </div>
+</body>
+</html>
